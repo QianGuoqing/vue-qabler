@@ -4,72 +4,54 @@
       <a-col :span="2"></a-col>
       <a-col :span="20">
         <div class="tab">
-          <div class="tab-item">
-            <div class="home">
-              <a-icon type="home"/> Home
-            </div>
-            <div class="interface">
-              <a-popover trigger="click">
-                <template slot="content">
-                  <ul class="list">
-                    <li class="item">Cards Design</li>
-                    <li class="item">Charts</li>
-                    <li class="item">Pricing Cards</li>
-                  </ul>
-                </template>
-                <div class="inter">
-                  <a-icon type="codepen"/> Interface
-                </div>
-              </a-popover>
-            </div>
-            <div class="components">
-              <a-popover trigger="click">
-                <template slot="content">
-                  <ul class="list">
-                    <li class="item">Icons</li>
-                    <li class="item">Store</li>
-                    <li class="item">Blogs</li>
-                    <li class="item">Carousel</li>
-                  </ul>
-                </template>
-                <div class="component">
-                  <a-icon type="layout"/> Components
-                </div>
-              </a-popover>
-            </div>
-            <div class="pages">
-              <a-popover trigger="click">
-                <template slot="content">
-                  <ul class="list">
-                    <li class="item">Profile</li>
-                    <li class="item">Login</li>
-                    <li class="item">Register</li>
-                    <li class="item">Forgot Password</li>
-                    <li class="item">400 Error</li>
-                    <li class="item">401 Error</li>
-                    <li class="item">403 Error</li>
-                    <li class="item">404 Error</li>
-                    <li class="item">500 Error</li>
-                    <li class="item">503 Error</li>
-                    <li class="item">Email</li>
-                    <li class="item">Empty Page</li>
-                    <li class="item">RTL Mode</li>
-                  </ul>
-                </template>
-                <div class="page">
-                  <a-icon type="file-text"/> Pages
-                </div>
-              </a-popover>
-            </div>
-            <div class="forms">
-              <a-icon type="form"/> Forms
-            </div>
-            <div class="gallery">
-              <a-icon type="picture"/> Gallery
-            </div>
-          </div>
+          <a-menu mode="horizontal" v-model="current">
+            <a-menu-item key="home">
+              <a-icon type="home" />Home
+            </a-menu-item>
+            <a-sub-menu>
+              <span slot="title"><a-icon type="codepen" />Interface</span>
+              <a-menu-item-group>
+                <a-menu-item key="cards-design">Cards Design</a-menu-item>
+                <a-menu-item key="charts">Charts</a-menu-item>
+                <a-menu-item key="pricing-cards">Pricing Cards</a-menu-item>
+              </a-menu-item-group>
+            </a-sub-menu>
+            <a-sub-menu>
+              <span slot="title"><a-icon type="layout" />Components</span>
+              <a-menu-item-group>
+                <a-menu-item key="icons">Icons</a-menu-item>
+                <a-menu-item key="store">Store</a-menu-item>
+                <a-menu-item key="blog">Blog</a-menu-item>
+                <a-menu-item key="carousel">Carousel</a-menu-item>
+              </a-menu-item-group>
+            </a-sub-menu>
+            <a-sub-menu>
+              <span slot="title"><a-icon type="file-text" />Pages</span>
+              <a-menu-item-group>
+                <a-menu-item key="profile">Profile</a-menu-item>
+                <a-menu-item key="login">Login</a-menu-item>
+                <a-menu-item key="register">Register</a-menu-item>
+                <a-menu-item key="forget-password">Forget Password</a-menu-item>
+                <a-menu-item key="400-error">400 Error</a-menu-item>
+                <a-menu-item key="401-error">401 Error</a-menu-item>
+                <a-menu-item key="403-error">403 Error</a-menu-item>
+                <a-menu-item key="404-error">404 Error</a-menu-item>
+                <a-menu-item key="500-error">500 Error</a-menu-item>
+                <a-menu-item key="503-error">503 Error</a-menu-item>
+                <a-menu-item key="email">Email</a-menu-item>
+                <a-menu-item key="empty-page">Empty Page</a-menu-item>
+                <a-menu-item key="rlt-mode">RLT Mode</a-menu-item>
+              </a-menu-item-group>
+            </a-sub-menu>
+            <a-menu-item key="forms">
+              <a-icon type="form" />Forms
+            </a-menu-item>
+            <a-menu-item key="gallery">
+              <a-icon type="picture" />Gallery
+            </a-menu-item>
+          </a-menu>
           <div class="search">
-            <a-input-search placeholder="Search..." style="width: 18rem"></a-input-search>
+            <a-input-search placeholder="Search..." style="width: 12rem"></a-input-search>
           </div>
         </div>
       </a-col>
@@ -80,20 +62,23 @@
 
 <script>
   export default {
-    name: 'QTab'
+    name: 'QTab',
+    data() {
+      return {
+        current: ['home']
+      }
+    },
   }
 </script>
 
 <style lang="stylus" scoped>
+  .tab-wrapper >>> .ant-menu
+    border-bottom none
+
   .tab-wrapper
-    padding 1rem 0
     border-bottom 1px solid rgba(0, 40, 100, 0.12)
     .tab
       display flex
       justify-content space-between
-      .tab-item
-        display flex
-        margin-top 7px
-        & > div
-          margin-right 15px
+      align-items center
 </style>
