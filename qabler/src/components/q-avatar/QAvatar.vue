@@ -27,6 +27,7 @@
 <style lang="stylus" scoped>
   .q-avatar
     display flex
+    font-family 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     .info
       margin-left 0.5rem
       .title
