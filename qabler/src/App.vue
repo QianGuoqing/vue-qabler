@@ -2,6 +2,7 @@
   <div id="app">
     <q-header></q-header>
     <q-tab></q-tab>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -18,5 +19,7 @@
 </script>
 
 <style>
-
+  #app {
+    background-color: #f5f7fb
+  }
 </style>

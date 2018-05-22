@@ -26,7 +26,7 @@
               </a-menu-item-group>
             </a-sub-menu>
             <a-sub-menu>
-              <span slot="title"><a-icon type="file-text" />Pages</span>
+              <span slot="title"><a-icon type="file" />Pages</span>
               <a-menu-item-group>
                 <a-menu-item key="profile">Profile</a-menu-item>
                 <a-menu-item key="login">Login</a-menu-item>
@@ -48,6 +48,11 @@
             </a-menu-item>
             <a-menu-item key="gallery">
               <a-icon type="picture" />Gallery
+            </a-menu-item>
+            <a-menu-item key="documentations">
+              <router-link to="/documentations" tag="div">
+                <a-icon type="file-text" />Documentations
+              </router-link>
             </a-menu-item>
           </a-menu>
           <div class="search">
@@ -74,8 +79,11 @@
 <style lang="stylus" scoped>
   .tab-wrapper >>> .ant-menu
     border-bottom none
+  .tab-wrapper >>> .ant-menu-item, .ant-menu-submenu-title
+    padding 0 0.625rem
 
   .tab-wrapper
+    background-color #fff
     border-bottom 1px solid rgba(0, 40, 100, 0.12)
     .tab
       display flex

@@ -52,6 +52,7 @@
 
 <style lang="stylus" scoped>
   .header
+    background-color #fff
     .header-info
       padding 1rem 0
       border-bottom 1px solid rgba(0, 40, 100, 0.12)
