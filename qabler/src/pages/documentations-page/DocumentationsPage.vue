@@ -5,7 +5,12 @@
       <a-col :span="20">
         <div class="title">Documentation</div>
         <a-row>
-          <a-col :span="18"></a-col>
+          <a-col :span="17">
+            <div class="content">
+              <router-view></router-view>
+            </div>
+          </a-col>
+          <a-col :span="1"></a-col>
           <a-col :span="6">
             <a class="source-code">
               <a-icon type="github"/>
@@ -29,8 +34,10 @@
                 Buttons
               </a-menu-item>
               <a-menu-item key="colors">
-                <a-icon type="edit" />
-                Colors
+                <router-link tag="div" to="/documentations/colors">
+                  <a-icon type="edit" />
+                  Colors
+                </router-link>
               </a-menu-item>
               <a-menu-item key="cards">
                 <a-icon type="picture" />
@@ -70,6 +77,8 @@
       font-weight 400
       line-height 2.5rem
       padding 1rem 0
+    .content
+      padding-bottom 2rem
     .source-code
       display block
       font-weight 600
