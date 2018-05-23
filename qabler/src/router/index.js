@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 
 import DocumentationsPage from '../pages/documentations-page/DocumentationsPage.vue'
 import DocColors from '../pages/documentations-page/components/doc-colors/DocColors.vue'
+import DocAlerts from '../pages/documentations-page/components/doc-alerts/DocAlerts.vue'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
           path: 'colors',
           name: 'DocColors',
           component: DocColors
+        },
+        {
+          path: 'alerts',
+          name: 'DocAlerts',
+          component: DocAlerts
         }
       ]
     }

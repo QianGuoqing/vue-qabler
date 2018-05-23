@@ -22,8 +22,10 @@
               theme="light"
             >
               <a-menu-item key="alerts">
-                <a-icon type="warning" />
-                Alerts
+                <router-link tag="div" to="/documentations/alerts">
+                  <a-icon type="warning" />
+                  Alerts
+                </router-link>
               </a-menu-item>
               <a-menu-item key="avatars">
                 <a-icon type="user" />
