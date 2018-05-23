@@ -59,7 +59,12 @@
         <q-action-alert :text="actionText1" type="danger" enter-text="danger确认" cancel-text="danger取消"></q-action-alert>
       </div>
       <div class="alert-item">
-        <q-action-alert :text="actionText1" type="primary" enter-text="primary 确认" cancel-text="primary 取消" :enter-handler="enterPrimary" :cancel-handler="cancelPrimary"></q-action-alert>
+        <q-action-alert 
+        :text="actionText1" 
+        type="primary" 
+        enter-text="primary 确认" 
+        cancel-text="primary 取消" 
+        :enter-handler="enterPrimary" :cancel-handler="cancelPrimary"></q-action-alert>
       </div>
       <div class="alert-item">
         <q-action-alert :text="actionText1" type="warning" enter-text="warning 确认" cancel-text="warning 取消"></q-action-alert>
