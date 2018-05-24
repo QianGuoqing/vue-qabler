@@ -28,8 +28,10 @@
                 </router-link>
               </a-menu-item>
               <a-menu-item key="avatars">
-                <a-icon type="user" />
-                Avatars
+                <router-link tag="div" to="/documentations/avatars">
+                  <a-icon type="user" />
+                  Avatars
+                </router-link>
               </a-menu-item>
               <a-menu-item key="buttons">
                 <a-icon type="plus-square-o" />
