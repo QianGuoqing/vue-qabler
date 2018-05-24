@@ -4,24 +4,30 @@
 
 #### 封装的组件 (点击组件类型跳转到组件详情) 
 
-**[Alert](#avatar)**
+**[Alert](#alert)**
 
 - `q-basic-alert`
 - `q-icon-alert`
 - `q-action-alert`
 
+--
+
+**[Avatar](#avatar)**
+
+- `q-avatars`
+
 ---
 
 #### 组件详细信息
 
-**<span id="avatar">Alert</span>**
+**<span id="alert">Alert</span>**
 
 **`q-basic-alert`**
 
 基础的alert组件，API：
 
 |  参数   |      说明      |  类型 | 默认值 |
-|:----------:|:-------------:|:------:|:-----:|
+|:----------|:-------------|:------:|:-----|
 | text | alert框中的文本  | String| '' |
 | type |   alert框类型: primary, secondary, success, info, warning, danger   |  String | primary |
 
@@ -57,7 +63,7 @@
 在`q-basic-alert`的基础上添加确认和取消按钮，按钮的文字可以自己设置，按钮的事件可以自定义，API：
 
 |  参数   |      说明      |  类型 | 默认值 |
-|:----------:|:-------------:|:------:|:-----:|
+|:----------|:-------------|:------|:-----|
 | text | alert框中的文本  | String| '' |
 | type |   alert框类型: primary, secondary, success, info, warning, danger   |  String | primary |
 | enter-text | 确认按钮的文本 | String | Enter |
@@ -91,3 +97,56 @@ methods: {
 
 --
 
+**<span id="avatar">Avatar</span>**
+
+**`q-avatars`**
+
+显示头像的组件：包括默认头像、不同大小的头像、如果没有图片则文字占位的头像、有状态的头像。
+
+|  参数   |      说明      |  类型 | 默认值 |
+|:----------|:-------------|:------|:-----|
+| text | 占位文字  | String| '' |
+| color |  占位文字的颜色, `avatar-`前缀：blue, azure, indigo, purple, pink, red, orange, yellow, lime, green, teal, cyan, gray, dark-gray  |  String | avatar-blue |
+| size | avatar大小, `avatar-`前缀: sm, md, lg, xl, xxl | String | avatar |
+| status | 是否有状态，状态颜色用上面的color | Boolean |false |
+
+使用：
+
+`simple-avatar`
+
+```javascript
+<q-avatars>
+  <img src="1.jpg" alt="" slot="avatar">
+</q-avatars>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/avatar-simple.png)
+
+`size-avatar`
+
+```javascript
+<q-avatars size="avatar-sm">
+  <img src="1.jpg" alt="" slot="avatar">
+</q-avatars>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/avatar-size.png)
+
+`status-avatar`
+
+```javascript
+<q-avatars :status="true" color="avatar-red">
+  <img src="1.jpg" alt="" slot="avatar">
+</q-avatars>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/avatar-status.png)
+
+`placeholder-avatar`
+
+```
+<q-avatars text="PH" color="avatar-red" size="avatar-sm">
+</q-avatars>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/avatar-placeholder.png)
