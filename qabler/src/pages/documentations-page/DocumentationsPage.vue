@@ -56,8 +56,10 @@
                 Form Components
               </a-menu-item>
               <a-menu-item key="tags">
-                <a-icon type="tags-o" />
-                Tags
+                <router-link tag="div" to="/documentations/tags">
+                  <a-icon type="tags-o" />
+                  Tags
+                </router-link>
               </a-menu-item>
             </a-menu>
           </a-col>
