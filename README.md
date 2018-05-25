@@ -16,6 +16,12 @@
 
 - `q-avatars`
 
+--
+
+**[Tag](#tag)**
+
+- `q-tag`
+
 ---
 
 #### 组件详细信息
@@ -150,3 +156,55 @@ methods: {
 ```
 
 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/avatar-placeholder.png)
+
+--
+
+**<span id="tag">Tag</span>**
+
+**`q-tag`**
+
+标签组件：包括基础的标签，link标签，color标签，avatar标签
+
+|  参数   |      说明      |  类型 | 默认值 |
+|:----------|:-------------|:------|:-----|
+| text | 标签文字  | String| '' |
+| color |  标签文字的颜色, `tag-`前缀：blue, azure, indigo, purple, pink, red, orange, yellow, lime, green, teal, cyan, gray, dark-gray  |  String | tag-default-color |
+| link | 是否有链接效果，link | String |'' |
+
+使用：
+
+`simple-tag`
+
+```javascript
+<q-tag text="simple tag"></q-tag>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/tag-simple.jpeg)
+
+`link-tag`
+
+```javascript
+<q-tag text="link tag" link="link"></q-tag>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/tag-link.gif)
+
+`color-tag`
+
+```javascript
+<q-tag :text="color" link="link" :color="color"></q-tag>
+
+color取值: tag-blue, tag-red ...
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/tag-color.gif)
+
+`avatar-tag`
+
+```javascript
+<q-tag text="victoria">
+  <img slot="avatar" src="1.jpg" alt="">
+</q-tag>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/tag-avatar.jpeg)
