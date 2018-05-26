@@ -1,10 +1,9 @@
 <template>
   <div class="q-button" :class="[color, size, block, disable, outline, social]">
     <div class="loading" v-if="loading">
-      <!-- <img src="../../assets/images/loading/loading-bars.svg" alt=""> -->
       <a-icon type="loading"/>
     </div>
-    <div v-else>
+    <div @click="clickHandler" v-else>
       <slot name="icon"></slot>
       <span class="text">{{ text }}</span>
     </div>
@@ -46,6 +45,10 @@
       loading: {
         type: Boolean,
         default: false
+      },
+      clickHandler: {
+        type: Function,
+        default: function() { }
       }
     },
   }

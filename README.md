@@ -22,6 +22,12 @@
 
 - `q-tag`
 
+--
+
+**[Button](#button)**
+
+- `q-button`
+
 ---
 
 #### 组件详细信息
@@ -44,7 +50,7 @@
 </q-basic-alert>
 ```
 
-[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/q-basic-avatar.jpeg)
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/alert-basic.jpeg)
 
 --
 
@@ -60,7 +66,7 @@
 </q-icon-alert>
 ```
 
-[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/q-icon-avatar.jpeg)
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/alert-icon.jpeg)
 
 --
 
@@ -99,7 +105,7 @@ methods: {
 }
 ```
 
-[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/q-action-avatar.gif)
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/alert-action.gif)
 
 --
 
@@ -208,3 +214,110 @@ color取值: tag-blue, tag-red ...
 ```
 
 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/tag-avatar.jpeg)
+
+--
+
+**<span id="button">Button</span>**
+
+**`q-button`**
+
+按钮标签：包括基础button，不同颜色的button，outline button，不同大小的button，带icon的button，仅仅包含icon的button，以及带loading的button
+
+|  参数   |      说明      |  类型 | 默认值 |
+|:----------|:-------------|:------|:-----|
+| text | 按钮文字  | String| '' |
+| color |  按钮文字的颜色, `btn-`前缀：blue, azure, indigo, purple, pink, red, orange, yellow, lime, green, teal, cyan, gray, dark-gray, primary, secondary, info, success, warning, danger  |  String | btn-primary |
+| size | 按钮大小, `btn-`前缀：sm, lg | String |'' |
+| block | 按钮是否占满一行, `btn-`前缀：block | String |'' |
+| disable | 按钮是否可点击, `btn-`前缀：disbale | String |'' |
+| outline | 另一种按钮样式, `btn-outline-`前缀：加上color属性 | String |'btn-outline-primary' |
+| social | icon的一种样式, `btn-`前缀：social | String |'' |
+| loading | 是否带有loading效果 | Boolean |false |
+| clickHandler | 按钮事件 | Function |function(){} |
+
+使用：
+
+`basic-button`
+
+```javascript
+<q-button text="Link"></q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-basic.gif)
+
+`color-buttons`
+
+```javascript
+<q-button text="primary" color="btn-primary"></q-button>
+
+<q-button text="color" color="btn-color-red"></q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-variations.gif)
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-color.gif)
+
+`disabled-buttons`
+
+```javascript
+<q-button text="primary" color="btn-primary" disable="disable"></q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-disable.gif)
+
+`outline-button`
+
+```javascript
+<q-button text="primary" outline="btn-outline-primary"></q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-outline.gif)
+
+`size-button`
+
+```javascript
+<q-button size="btn-sm" text="small button"></q-button>
+<q-button size="btn-lg" text="large button"></q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-size.gif)
+
+`block-button`
+
+```javascript
+<q-button block="btn-block" text="block button" color="btn-danger"></q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-block.gif)
+
+`icon-botton`
+
+```javascript
+<q-button text="upload" color="btn-black">
+  <a-icon type="upload" slot="icon"/>
+</q-button>
+
+<q-button social="btn-social">
+  <a-icon type="facebook" slot="icon"/>
+</q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-icons.gif)
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-social.gif)
+
+`loading-button`
+
+```javascript
+<q-button :loading="true"></q-button>
+<q-button :loading="true" social="btn-social" color="btn-green"></q-button>
+<q-button :loading="true" color="btn-black" block="btn-block"></q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-loading.gif)
+
+`events-button`
+
+```javascript
+<q-button text="color" :click-handler="buttonClick"></q-button>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-events.gif)

@@ -172,6 +172,16 @@
       </ul>
     </div>
 
+    <div class="title">Buttons events</div>
+    <div class="desc">Buttons with binding events</div>
+    <div class="button-panel">
+      <ul class="button-list">
+        <li class="button-item" v-for="color in colors" :key="color">
+          <q-button :text="color" :color="color" :click-handler="buttonClick"></q-button>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </template>
 
@@ -201,6 +211,11 @@
           'btn-dark-gray',
           'btn-black'
         ]
+      }
+    },
+    methods: {
+      buttonClick(e) {
+        alert(e.target.textContent)
       }
     },
   }
