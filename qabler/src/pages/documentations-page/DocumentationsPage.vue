@@ -34,8 +34,10 @@
                 </router-link>
               </a-menu-item>
               <a-menu-item key="buttons">
-                <a-icon type="plus-square-o" />
-                Buttons
+                <router-link tag="div" to="/documentations/buttons">
+                  <a-icon type="plus-square-o" />
+                  Buttons
+                </router-link>
               </a-menu-item>
               <a-menu-item key="colors">
                 <router-link tag="div" to="/documentations/colors">

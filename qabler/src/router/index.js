@@ -7,6 +7,7 @@ import DocColors from '../pages/documentations-page/components/doc-colors/DocCol
 import DocAlerts from '../pages/documentations-page/components/doc-alerts/DocAlerts.vue'
 import DocAvatars from '../pages/documentations-page/components/doc-avatars/DocAvatars.vue'
 import DocTags from '../pages/documentations-page/components/doc-tags/DocTags.vue'
+import DocButtons from '../pages/documentations-page/components/doc-buttons/DocButtons.vue'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
           path: 'tags',
           name: 'DocTags',
           component: DocTags
+        },
+        {
+          path: 'buttons',
+          name: 'DocButtons',
+          component: DocButtons
         },
         {
           path: '/',
