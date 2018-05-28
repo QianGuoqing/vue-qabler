@@ -30,6 +30,11 @@
 
 ---
 
+**[Card](#card)**
+
+- `q-card`
+- `q-raw-card`
+
 #### 组件详细信息
 
 **<span id="alert">Alert</span>**
@@ -321,3 +326,113 @@ color取值: tag-blue, tag-red ...
 ```
 
 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/button-events.gif)
+
+--
+
+**<span id="card">Card</span>**
+
+- `q-card`
+- `q-raw-card`
+
+卡片效果，可以在里面填充东西
+
+|  参数   |      说明      |  类型 | 默认值 |
+|:----------|:-------------|:------|:-----|
+| color |  按钮文字的颜色, `card-`前缀：blue, azure, indigo, purple, pink, red, orange, yellow, lime, green, teal, cyan, gray, dark-gray, primary, secondary, info, success, warning, danger  |  String | btn-primary |
+| loading | 是否带有loading效果 | Boolean |false |
+
+
+使用：
+
+`card-default`
+
+```javascript
+<q-card style="width: 50%">
+  <div slot="card-title">Card title</div>
+  <div slot="card-body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Aperiam deleniti fugit incidunt, iste, itaque minima 
+    neque pariatur perferendis sed suscipit velit vitae 
+    voluptatem. A consequuntur, deserunt eaque error nulla !
+  </div>
+</q-card>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/card-default.jpeg)
+
+`card-advance`
+
+```javascript
+<q-card style="width: 50%">
+  <div slot="card-title">
+    <div>Card title</div>
+    <div>
+      <q-button text="action 1" size="btn-sm"></q-button>
+      <q-button text="action 2" size="btn-sm" color="btn-danger"></q-button>
+    </div>
+  </div>
+  <div slot="card-body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  </div>
+  <div slot="card-footer">
+    This is standard card footer
+  </div>
+</q-card>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/card-advance.jpeg)
+
+`card-post`
+
+```javascript
+<q-card style="width: 50%">
+  <img src="david-klaasen-54203-500.jpg" alt="" slot="card-poster">
+  <div slot="card-title">
+    <a href="">And this isn't my nose. This is a false one.</a>
+  </div>
+  <div slot="card-body">
+    Look, my liege! The Knights Who Say Ni demand a sacrifice!
+     …Are you suggesting that coconuts migr...
+  </div>
+  <div slot="card-footer">
+    <q-button color="btn-black" block="btn-block" text="send"></q-button>
+  </div>
+</q-card>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/card-poster.jpeg)
+
+`card-color`
+
+```javascript
+<q-card style="width: 95%" color="card-red">
+  <div slot="card-title">Card title</div>
+  <div slot="card-body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  </div>
+</q-card>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/card-color.jpeg)
+
+`card-loading`
+
+```javascript
+<q-card style="width: 50%" :loading="true">
+  <div slot="card-title">Card with loading</div>
+</q-card>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/card-loading.gif)
+
+`card-raw`
+
+```javascript
+<q-raw-card style="width: 50%">
+  <div slot="card-content">
+    Extra long content of card. Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+  </div>
+</q-raw-card>
+```
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/card-raw-deck.jpeg)
