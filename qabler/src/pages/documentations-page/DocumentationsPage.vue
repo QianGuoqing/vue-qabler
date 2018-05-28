@@ -46,8 +46,10 @@
                 </router-link>
               </a-menu-item>
               <a-menu-item key="cards">
-                <a-icon type="picture" />
-                Cards
+                <router-link to="/documentations/cards">
+                  <a-icon type="picture" />
+                  Cards
+                </router-link>
               </a-menu-item>
               <a-menu-item key="charts">
                 <a-icon type="line-chart" />
