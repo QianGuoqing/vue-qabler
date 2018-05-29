@@ -56,8 +56,10 @@
                 Charts
               </a-menu-item>
               <a-menu-item key="form-components">
-                <a-icon type="form" />
-                Form Components
+                <router-link to="/documentations/forms">
+                  <a-icon type="form" />
+                  Form Components
+                </router-link>
               </a-menu-item>
               <a-menu-item key="tags">
                 <router-link tag="div" to="/documentations/tags">

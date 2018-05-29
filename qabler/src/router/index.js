@@ -9,6 +9,7 @@ import DocAvatars from '../pages/documentations-page/components/doc-avatars/DocA
 import DocTags from '../pages/documentations-page/components/doc-tags/DocTags.vue'
 import DocButtons from '../pages/documentations-page/components/doc-buttons/DocButtons.vue'
 import DocCards from '../pages/documentations-page/components/doc-cards/DocCards.vue'
+import DocForms from '../pages/documentations-page/components/doc-forms/DocForms.vue'
 
 Vue.use(Router)
 
@@ -54,6 +55,11 @@ export default new Router({
           path: 'cards',
           name: 'DocCards',
           component: DocCards
+        },
+        {
+          path: 'forms',
+          name: 'DocForms',
+          component: DocForms
         },
         {
           path: '/',

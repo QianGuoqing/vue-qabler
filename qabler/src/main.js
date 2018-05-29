@@ -7,6 +7,8 @@ import VueAntd from 'vue-antd-ui'
 import 'vue-antd-ui/dist/antd.css'
 import './assets/css/reset.css'
 // import './common/js/rem'
+import './assets/semantic.css'
+import './assets/semantic.js'
 
 Vue.config.productionTip = false
 
