@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueAntd from 'vue-antd-ui'
+import VueViser from 'viser-vue'
 import 'vue-antd-ui/dist/antd.css'
 import './assets/css/reset.css'
 // import './common/js/rem'
@@ -13,6 +14,7 @@ import './assets/semantic.js'
 Vue.config.productionTip = false
 
 Vue.use(VueAntd)
+Vue.use(VueViser)
 
 /* eslint-disable no-new */
 new Vue({

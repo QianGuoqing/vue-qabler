@@ -52,8 +52,10 @@
                 </router-link>
               </a-menu-item>
               <a-menu-item key="charts">
-                <a-icon type="line-chart" />
-                Charts
+                <router-link to="/documentations/charts">
+                  <a-icon type="line-chart" />
+                  Charts
+                </router-link>
               </a-menu-item>
               <a-menu-item key="form-components">
                 <router-link to="/documentations/forms">
