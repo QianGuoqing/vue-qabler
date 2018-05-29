@@ -37,7 +37,7 @@
 
 --
 
-**Form (基于Semantic-ui)**
+**[Form (基于Semantic-ui)](#form)**
 
 - `q-basic-input`
 - `q-icon-input`
@@ -45,6 +45,40 @@
 - `q-checkbox`
 - `q-toggle`
 - `q-select`
+
+--
+
+**[Chart (基于viser)](#chart)**
+
+折线图:
+
+- `q-line-chart`
+- `q-gradient-chart`
+
+直方图
+
+- `q-histogram-chart`
+- `q-interval-chart`
+- `q-waterful-chart`
+
+饼图
+
+- `q-pie-chart`
+- `q-pie-color-chart`
+
+散点图
+
+- `q-scatter-chart`
+- `q-scatter-color-chart`
+- `q-scatter-disturb-chart`
+- `q-scatter-bubble-chart`
+
+面积图
+
+- `q-area-chart`
+- `q-area-heap-chart`
+- `q-area-interval-chart`
+- `q-area-percent-chart`
 
 --
 #### 组件详细信息
@@ -448,3 +482,20 @@ color取值: tag-blue, tag-red ...
 ```
 
 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/card-raw-deck.jpeg)
+
+--
+
+**<span id="form">Form</span>**
+
+[点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/form-components.gif)
+
+--
+
+**<span id="chart">Chart</span>**
+
+- 折线图 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/chart-line.gif)
+- 直方图 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/chart-histogram.gif)
+- 饼图 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/chart-pie.gif)
+- 散点图 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/chart-scatter.gif)
+- 面积图 [点击此处查看效果](http://47.98.159.8/picture-repo/vue-qabler/chart-area.gif)
+
