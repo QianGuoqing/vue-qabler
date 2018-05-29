@@ -35,6 +35,18 @@
 - `q-card`
 - `q-raw-card`
 
+--
+
+**Form (基于Semantic-ui)**
+
+- `q-basic-input`
+- `q-icon-input`
+- `q-action-input`
+- `q-checkbox`
+- `q-toggle`
+- `q-select`
+
+--
 #### 组件详细信息
 
 **<span id="alert">Alert</span>**
