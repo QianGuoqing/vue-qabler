@@ -9,10 +9,14 @@
               <a-icon type="home" />Home
             </a-menu-item>
             <a-sub-menu>
-              <span slot="title"><a-icon type="codepen" />Interface</span>
+              <router-link to="/interface" tag="span" slot="title"><a-icon type="codepen" />Interface</router-link>
               <a-menu-item-group>
                 <a-menu-item key="cards-design">Cards Design</a-menu-item>
-                <a-menu-item key="charts">Charts</a-menu-item>
+                <a-menu-item key="charts">
+                  <router-link to="/interface/charts-page" tag="span">
+                    Charts
+                  </router-link>
+                </a-menu-item>
                 <a-menu-item key="pricing-cards">Pricing Cards</a-menu-item>
               </a-menu-item-group>
             </a-sub-menu>

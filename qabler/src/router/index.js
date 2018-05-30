@@ -23,6 +23,9 @@ import PageError404 from '../pages/pages-page/views/page-error404/PageError404.v
 import PageError500 from '../pages/pages-page/views/page-error500/PageError500.vue'
 import PageError503 from '../pages/pages-page/views/page-error503/PageError503.vue'
 
+import InterfacePage from '../pages/interface-page/InterfacePage.vue'
+import ChartsPage from '../pages/interface-page/views/charts-page/ChartsPage.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -133,6 +136,18 @@ export default new Router({
           path: 'page-error503',
           name: 'PageError503',
           component: PageError503
+        }
+      ]
+    },
+    {
+      path: '/interface',
+      name: 'Interface',
+      component: InterfacePage,
+      children: [
+        {
+          path: 'charts-page',
+          name: 'ChartsPage',
+          component: ChartsPage
         }
       ]
     }
