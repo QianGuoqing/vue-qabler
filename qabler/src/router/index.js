@@ -12,6 +12,10 @@ import DocCards from '../pages/documentations-page/components/doc-cards/DocCards
 import DocForms from '../pages/documentations-page/components/doc-forms/DocForms.vue'
 import DocCharts from '../pages/documentations-page/components/doc-charts/DocCharts.vue'
 
+import PagesPage from '../pages/pages-page/PagesPage.vue'
+import PageLogin from '../pages/pages-page/views/page-login/PageLogin.vue'
+import PageRegister from '../pages/pages-page/views/page-register/PageRegister.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -70,6 +74,23 @@ export default new Router({
         {
           path: '/',
           redirect: '/documentations/alerts'
+        }
+      ]
+    },
+    {
+      path: '/pages',
+      name: 'PagesPage',
+      component: PagesPage,
+      children: [
+        {
+          path: 'page-login',
+          name: 'PageLogin',
+          component: PageLogin
+        },
+        {
+          path: 'page-register',
+          name: 'PageRegister',
+          component: PageRegister
         }
       ]
     }

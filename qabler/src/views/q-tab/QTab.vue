@@ -26,11 +26,17 @@
               </a-menu-item-group>
             </a-sub-menu>
             <a-sub-menu>
-              <span slot="title"><a-icon type="file" />Pages</span>
+              <router-link to="/pages" tag="span" slot="title"><a-icon type="file" />Pages</router-link>
               <a-menu-item-group>
                 <a-menu-item key="profile">Profile</a-menu-item>
-                <a-menu-item key="login">Login</a-menu-item>
-                <a-menu-item key="register">Register</a-menu-item>
+                <a-menu-item key="login">
+                  <router-link to="/pages/page-login" tag="span">Login</router-link>
+                </a-menu-item>
+                <a-menu-item key="register">
+                  <router-link to="/pages/page-register" tag="span">
+                    Register
+                  </router-link>
+                </a-menu-item>
                 <a-menu-item key="forget-password">Forget Password</a-menu-item>
                 <a-menu-item key="400-error">400 Error</a-menu-item>
                 <a-menu-item key="401-error">401 Error</a-menu-item>

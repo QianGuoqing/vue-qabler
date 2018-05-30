@@ -22,4 +22,5 @@
     background-color #fff
     font-size 0.8rem
     font-weight 400
+    box-shadow 0 0 5px #ccc
 </style>
