@@ -1,8 +1,8 @@
 <template>
   <div class="page-register">
     <div class="register">
-      <q-raw-card style="width: 25%">
-        <div slot="card-content">
+      <q-raw-card style="width: 30%">
+        <div style="width: 100%" slot="card-content">
           <div class="title">Login to your account</div>
           <form>
             <div class="form-group">

@@ -15,6 +15,13 @@ import DocCharts from '../pages/documentations-page/components/doc-charts/DocCha
 import PagesPage from '../pages/pages-page/PagesPage.vue'
 import PageLogin from '../pages/pages-page/views/page-login/PageLogin.vue'
 import PageRegister from '../pages/pages-page/views/page-register/PageRegister.vue'
+import PageForgotPassword from '../pages/pages-page/views/page-forgot-password/PageForgotPassword.vue'
+import PageError400 from '../pages/pages-page/views/page-error400/PageError400.vue'
+import PageError401 from '../pages/pages-page/views/page-error401/PageError401.vue'
+import PageError403 from '../pages/pages-page/views/page-error403/PageError403.vue'
+import PageError404 from '../pages/pages-page/views/page-error404/PageError404.vue'
+import PageError500 from '../pages/pages-page/views/page-error500/PageError500.vue'
+import PageError503 from '../pages/pages-page/views/page-error503/PageError503.vue'
 
 Vue.use(Router)
 
@@ -91,6 +98,41 @@ export default new Router({
           path: 'page-register',
           name: 'PageRegister',
           component: PageRegister
+        },
+        {
+          path: 'page-forgot-password',
+          name: 'PageForgotPassword',
+          component: PageForgotPassword
+        },
+        {
+          path: 'page-error400',
+          name: 'PageError400',
+          component: PageError400
+        },
+        {
+          path: 'page-error401',
+          name: 'PageError401',
+          component: PageError401
+        },
+        {
+          path: 'page-error403',
+          name: 'PageError403',
+          component: PageError403
+        },
+        {
+          path: 'page-error404',
+          name: 'PageError404',
+          component: PageError404
+        },
+        {
+          path: 'page-error500',
+          name: 'PageError500',
+          component: PageError500
+        },
+        {
+          path: 'page-error503',
+          name: 'PageError503',
+          component: PageError503
         }
       ]
     }

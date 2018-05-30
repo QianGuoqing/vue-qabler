@@ -1,31 +1,26 @@
 <template>
-  <div class="page-login">
-    <div class="login">
+  <div class="page-forgot-password">
+    <div class="forgot-password">
       <q-raw-card style="width: 30%">
         <div style="width: 100%" slot="card-content">
-          <div class="title">Login to your account</div>
+          <div class="title">Forgot password</div>
           <form>
             <div class="form-group">
-              <label class="form-label" for="">Email Address</label>
+              <div class="text-muted">
+                Enter your email address and your password will be reset and emailed to you.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="">Email Email</label>
               <a-input placeholder="Enter email" />
             </div>
-            <div class="form-group">
-              <div class="form-head">
-                <label class="form-label" for="">password</label>
-                <a href="">I forgot password</a>
-              </div>
-              <a-input placeholder="Password" />
-            </div>
-            <div class="form-group">
-              <a-checkbox>Remember me</a-checkbox>
-            </div>
             <div class="form-button">
-              <q-button block="btn-block" text="Login"></q-button>
+              <q-button block="btn-block" text="Send me new password"></q-button>
             </div>
           </form>
         </div>
       </q-raw-card>
-      <div class="extra">Don't have account yet? <a href="">Sign Up</a></div>
+      <div class="extra">Forget it, <a href="">send me back</a> to the sign in screen.</div>
     </div>
   </div>
 </template>
@@ -43,6 +38,10 @@
 </script>
 
 <style lang="stylus" scoped>
+  .text-muted
+    font-size 15px
+    color #9aa0ac
+    margin-bottom 3rem
   .extra
     text-align center
     margin-top 1.5rem
@@ -53,7 +52,7 @@
   .form-head
     display flex
     justify-content space-between
-  .login
+  .forgot-password
     display block
     margin 10px auto
     position relative
@@ -62,7 +61,7 @@
   .form-button
     margin-top 2rem
 
-  .page-login
+  .page-forgot-password
     width 100%
     height 100%
     .title

@@ -37,13 +37,39 @@
                     Register
                   </router-link>
                 </a-menu-item>
-                <a-menu-item key="forget-password">Forget Password</a-menu-item>
-                <a-menu-item key="400-error">400 Error</a-menu-item>
-                <a-menu-item key="401-error">401 Error</a-menu-item>
-                <a-menu-item key="403-error">403 Error</a-menu-item>
-                <a-menu-item key="404-error">404 Error</a-menu-item>
-                <a-menu-item key="500-error">500 Error</a-menu-item>
-                <a-menu-item key="503-error">503 Error</a-menu-item>
+                <a-menu-item key="forget-password">
+                  <router-link to="/pages/page-forgot-password" tag="span">Forget Password</router-link>
+                </a-menu-item>
+                <a-menu-item key="400-error">
+                  <router-link to="/pages/page-error400" tag="span">
+                    400 Error
+                  </router-link>
+                </a-menu-item>
+                <a-menu-item key="401-error">
+                  <router-link to="/pages/page-error401" tag="span">
+                    401 Error
+                  </router-link>
+                </a-menu-item>
+                <a-menu-item key="403-error">
+                  <router-link to="/pages/page-error403" tag="span">
+                    403 Error
+                  </router-link>
+                </a-menu-item>
+                <a-menu-item key="404-error">
+                  <router-link to="/pages/page-error404" tag="span">
+                    404 Error
+                  </router-link>
+                </a-menu-item>
+                <a-menu-item key="500-error">
+                  <router-link to="/pages/page-error500" tag="span">
+                    500 Error
+                  </router-link>
+                </a-menu-item>
+                <a-menu-item key="503-error">
+                  <router-link to="/pages/page-error503" tag="span">
+                    503 Error
+                  </router-link>
+                </a-menu-item>
                 <a-menu-item key="email">Email</a-menu-item>
                 <a-menu-item key="empty-page">Empty Page</a-menu-item>
                 <a-menu-item key="rlt-mode">RLT Mode</a-menu-item>
