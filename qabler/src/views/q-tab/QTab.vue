@@ -21,7 +21,11 @@
                     Charts
                   </router-link>
                 </a-menu-item>
-                <a-menu-item key="pricing-cards">Pricing Cards</a-menu-item>
+                <a-menu-item key="pricing-cards">
+                  <router-link to="/interface/price-card" tag="span">
+                    Pricing Cards
+                  </router-link>
+                </a-menu-item>
               </a-menu-item-group>
             </a-sub-menu>
             <a-sub-menu>
