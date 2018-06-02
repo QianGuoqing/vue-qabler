@@ -11,7 +11,11 @@
             <a-sub-menu>
               <router-link to="/interface" tag="span" slot="title"><a-icon type="codepen" />Interface</router-link>
               <a-menu-item-group>
-                <a-menu-item key="cards-design">Cards Design</a-menu-item>
+                <a-menu-item key="cards-design">
+                  <router-link to="/interface/card-design" tag="span">
+                    Cards Design
+                  </router-link>
+                </a-menu-item>
                 <a-menu-item key="charts">
                   <router-link to="/interface/charts-page" tag="span">
                     Charts

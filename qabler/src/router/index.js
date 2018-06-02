@@ -25,6 +25,7 @@ import PageError503 from '../pages/pages-page/views/page-error503/PageError503.v
 
 import InterfacePage from '../pages/interface-page/InterfacePage.vue'
 import ChartsPage from '../pages/interface-page/views/charts-page/ChartsPage.vue'
+import CardDesignPage from '../pages/interface-page/views/card-design-page/CardDesignPage.vue'
 
 Vue.use(Router)
 
@@ -148,6 +149,11 @@ export default new Router({
           path: 'charts-page',
           name: 'ChartsPage',
           component: ChartsPage
+        },
+        {
+          path: 'card-design',
+          name: 'CardDesignPage',
+          component: CardDesignPage
         }
       ]
     }
