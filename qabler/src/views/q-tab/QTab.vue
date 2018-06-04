@@ -88,7 +88,9 @@
               </a-menu-item-group>
             </a-sub-menu>
             <a-menu-item key="forms">
-              <a-icon type="form" />Forms
+              <router-link to="/forms" tag="span">
+                <a-icon type="form" />Forms
+              </router-link>
             </a-menu-item>
             <a-menu-item key="gallery">
               <a-icon type="picture" />Gallery

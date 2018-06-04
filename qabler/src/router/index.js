@@ -28,6 +28,8 @@ import ChartsPage from '../pages/interface-page/views/charts-page/ChartsPage.vue
 import CardDesignPage from '../pages/interface-page/views/card-design-page/CardDesignPage.vue'
 import PriceCardPage from '../pages/interface-page/views/price-card-page/PriceCardPage.vue'
 
+import FormsPage from '../pages/forms-page/FormsPage.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -162,6 +164,11 @@ export default new Router({
           component: PriceCardPage
         }
       ]
+    },
+    {
+      path: '/forms',
+      name: 'FormsPage',
+      component: FormsPage
     }
   ]
 })
