@@ -43,7 +43,10 @@
                   </div>
                 </a-col>
                 <a-col :span="1"></a-col>
-                <a-col :span="8">b</a-col>
+                <a-col :span="7">
+                  <form-elements-second-column></form-elements-second-column>
+                </a-col>
+                <a-col :span="1"></a-col>
                 <a-col :span="8">c</a-col>
               </a-row>
             </div>
@@ -74,6 +77,8 @@
   import IconInput from './components/icon-input/IconInput.vue'
   import SeparatedInputs from './components/separated-inputs/SeparatedInputs.vue'
   import ZipCode from './components/zip-code/ZipCode.vue'
+
+  import FormElementsSecondColumn from './views/second/FormElementsSecondColumn.vue'
   export default {
     name: 'FormsPage',
     components: {
@@ -88,7 +93,8 @@
       GroupButtons,
       IconInput,
       SeparatedInputs,
-      ZipCode
+      ZipCode,
+      FormElementsSecondColumn
     }
   }
 </script>
