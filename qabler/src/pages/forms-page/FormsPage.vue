@@ -47,7 +47,9 @@
                   <form-elements-second-column></form-elements-second-column>
                 </a-col>
                 <a-col :span="1"></a-col>
-                <a-col :span="8">c</a-col>
+                <a-col :span="8">
+                  <form-elements-third-column></form-elements-third-column>
+                </a-col>
               </a-row>
             </div>
             <div slot="card-footer">
@@ -79,6 +81,7 @@
   import ZipCode from './components/zip-code/ZipCode.vue'
 
   import FormElementsSecondColumn from './views/second/FormElementsSecondColumn.vue'
+  import FormElementsThirdColumn from './views/third/FormElementsThirdColumn.vue'
   export default {
     name: 'FormsPage',
     components: {
@@ -94,7 +97,8 @@
       IconInput,
       SeparatedInputs,
       ZipCode,
-      FormElementsSecondColumn
+      FormElementsSecondColumn,
+      FormElementsThirdColumn
     }
   }
 </script>
@@ -105,4 +109,7 @@
       margin-top 2rem
     .form-item
       margin-bottom 16px
+    .form-elements-footer
+      display flex
+      justify-content space-between
 </style>
