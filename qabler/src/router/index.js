@@ -22,6 +22,7 @@ import PageError403 from '../pages/pages-page/views/page-error403/PageError403.v
 import PageError404 from '../pages/pages-page/views/page-error404/PageError404.vue'
 import PageError500 from '../pages/pages-page/views/page-error500/PageError500.vue'
 import PageError503 from '../pages/pages-page/views/page-error503/PageError503.vue'
+import PageProfile from '../pages/pages-page/views/page-profile/PageProfile.vue'
 
 import InterfacePage from '../pages/interface-page/InterfacePage.vue'
 import ChartsPage from '../pages/interface-page/views/charts-page/ChartsPage.vue'
@@ -140,6 +141,11 @@ export default new Router({
           path: 'page-error503',
           name: 'PageError503',
           component: PageError503
+        },
+        {
+          path: 'page-profile',
+          name: 'PageProfile',
+          component: PageProfile
         }
       ]
     },

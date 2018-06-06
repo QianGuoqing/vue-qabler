@@ -40,7 +40,9 @@
             <a-sub-menu>
               <router-link to="/pages" tag="span" slot="title"><a-icon type="file" />Pages</router-link>
               <a-menu-item-group>
-                <a-menu-item key="profile">Profile</a-menu-item>
+                <a-menu-item key="profile">
+                  <router-link to="/pages/page-profile" tag="span">Profile</router-link>
+                </a-menu-item>
                 <a-menu-item key="login">
                   <router-link to="/pages/page-login" tag="span">Login</router-link>
                 </a-menu-item>
