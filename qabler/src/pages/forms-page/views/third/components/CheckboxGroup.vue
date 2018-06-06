@@ -57,6 +57,7 @@
         value1: 'Apple',
         value2: 'Apple',
         value3: 'Apple',
+        value: []
       }
     },
   }

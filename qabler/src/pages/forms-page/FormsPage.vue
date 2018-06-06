@@ -60,6 +60,17 @@
             </div>
           </q-card>
         </div>
+        <a-row>
+          <a-col :span="8">
+            <input-mask-form></input-mask-form>
+            <profile-form></profile-form>
+          </a-col>
+          <a-col :span="1"></a-col>
+          <a-col :span="15">
+            <edit-profile></edit-profile>
+            <http-request></http-request>
+          </a-col>
+        </a-row>
       </a-col>
       <a-col :span="2"></a-col>
     </a-row>
@@ -82,6 +93,12 @@
 
   import FormElementsSecondColumn from './views/second/FormElementsSecondColumn.vue'
   import FormElementsThirdColumn from './views/third/FormElementsThirdColumn.vue'
+
+  import InputMaskForm from './views/mask/InputMaskForm.vue'
+  import ProfileForm from './views/profile/ProfileForm.vue'
+  import EditProfile from './views/edit/EditProfile.vue'
+  import HttpRequest from './views/http/HttpRequest.vue'
+
   export default {
     name: 'FormsPage',
     components: {
@@ -98,7 +115,11 @@
       SeparatedInputs,
       ZipCode,
       FormElementsSecondColumn,
-      FormElementsThirdColumn
+      FormElementsThirdColumn,
+      InputMaskForm,
+      ProfileForm,
+      EditProfile,
+      HttpRequest
     }
   }
 </script>
