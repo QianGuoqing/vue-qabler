@@ -15,13 +15,46 @@
                   <a-icon type="notification"/>
                 </a-badge>
               </div>
-              <div class="header-avatar">
-                <q-avatar title="Jane Pearson" sub-title="Administrator">
-                  <div slot="avatar" class="avatar-wrapper">
-                    <img src="../../assets/images/faces/female/19.jpg" alt="" class="avatar">
-                  </div>
-                </q-avatar>
-              </div>
+              <a-popover trigger="click">
+                <template slot="content">
+                  <a-menu
+                    style="width: 180px"
+                    :defaultSelectedKeys="['1']"
+                    :defaultOpenKeys="['sub1']">
+                    <a-menu-item key="1">
+                      <a-icon type="user" />
+                      Profile
+                    </a-menu-item>
+                    <a-menu-item key="2">
+                      <a-icon type="setting" />
+                      Settings
+                    </a-menu-item>
+                    <a-menu-item key="3">
+                      <a-icon type="inbox" />
+                      Inbox
+                    </a-menu-item>
+                    <a-menu-item key="4">
+                      <a-icon type="message" />
+                      Message
+                    </a-menu-item>
+                    <a-menu-item key="5">
+                      <a-icon type="question-circle-o" />
+                      Need help?
+                    </a-menu-item>
+                    <a-menu-item key="6">
+                      <a-icon type="logout" />
+                      Sign out
+                    </a-menu-item>
+                  </a-menu>
+                </template>
+                <div class="header-avatar">
+                  <q-avatar title="Jane Pearson" sub-title="Administrator">
+                    <div slot="avatar" class="avatar-wrapper">
+                      <img src="../../assets/images/faces/female/19.jpg" alt="" class="avatar">
+                    </div>
+                  </q-avatar>
+                </div>
+              </a-popover>
             </div>
           </div>
         </a-col>
@@ -51,6 +84,9 @@
 </script>
 
 <style lang="stylus" scoped>
+  .header >>> .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left
+    border-right none
+
   .header
     background-color #fff
     .header-info
