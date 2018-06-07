@@ -85,8 +85,16 @@
                   </router-link>
                 </a-menu-item>
                 <a-menu-item key="email">Email</a-menu-item>
-                <a-menu-item key="empty-page">Empty Page</a-menu-item>
-                <a-menu-item key="rlt-mode">RLT Mode</a-menu-item>
+                <a-menu-item key="empty-page">
+                  <router-link to="/pages/page-empty">
+                    Empty Page
+                  </router-link>
+                </a-menu-item>
+                <a-menu-item key="rlt-mode">
+                  <router-link to="/pages/page-rtl">
+                    RLT Mode
+                  </router-link>
+                </a-menu-item>
               </a-menu-item-group>
             </a-sub-menu>
             <a-menu-item key="forms">

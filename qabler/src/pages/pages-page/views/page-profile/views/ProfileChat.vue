@@ -45,5 +45,6 @@
 </script>
 
 <style lang="stylus" scoped>
-
+  .profile-chat
+    margin-top 2rem
 </style>

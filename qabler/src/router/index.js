@@ -23,6 +23,8 @@ import PageError404 from '../pages/pages-page/views/page-error404/PageError404.v
 import PageError500 from '../pages/pages-page/views/page-error500/PageError500.vue'
 import PageError503 from '../pages/pages-page/views/page-error503/PageError503.vue'
 import PageProfile from '../pages/pages-page/views/page-profile/PageProfile.vue'
+import PageEmpty from '../pages/pages-page/views/page-empty/PageEmpty.vue'
+import PageRtl from '../pages/pages-page/views/page-rtl/PageRtl.vue'
 
 import InterfacePage from '../pages/interface-page/InterfacePage.vue'
 import ChartsPage from '../pages/interface-page/views/charts-page/ChartsPage.vue'
@@ -146,6 +148,16 @@ export default new Router({
           path: 'page-profile',
           name: 'PageProfile',
           component: PageProfile
+        },
+        {
+          path: 'page-empty',
+          name: 'PageEmpty',
+          component: PageEmpty
+        },
+        {
+          path: 'page-rtl',
+          name: 'PageRtl',
+          component: PageRtl
         }
       ]
     },
