@@ -22,7 +22,7 @@
         default: []
       },
       color: {
-        type: Array,
+        type: String,
         default: 'btn-primary'
       }
     },

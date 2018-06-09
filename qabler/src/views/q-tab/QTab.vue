@@ -29,10 +29,11 @@
               </a-menu-item-group>
             </a-sub-menu>
             <a-sub-menu>
-              <span slot="title"><a-icon type="layout" />Components</span>
+              <router-link tag="span" to="/component-page" slot="title"><a-icon type="layout" />Components</router-link>
               <a-menu-item-group>
-                <a-menu-item key="icons">Icons</a-menu-item>
-                <a-menu-item key="store">Store</a-menu-item>
+                <a-menu-item key="store">
+                  <router-link tag="span" to="/component-page/store">Store</router-link>
+                </a-menu-item>
                 <a-menu-item key="blog">Blog</a-menu-item>
                 <a-menu-item key="carousel">Carousel</a-menu-item>
               </a-menu-item-group>

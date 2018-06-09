@@ -34,6 +34,9 @@ import PriceCardPage from '../pages/interface-page/views/price-card-page/PriceCa
 
 import FormsPage from '../pages/forms-page/FormsPage.vue'
 
+import ComponentPage from '../pages/component-page/ComponentPage.vue'
+import StorePage from '../pages/component-page/views/StorePage.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -193,6 +196,18 @@ export default new Router({
       path: '/forms',
       name: 'FormsPage',
       component: FormsPage
+    },
+    {
+      path: '/component-page',
+      name: 'ComponentPage',
+      component: ComponentPage,
+      children: [
+        {
+          path: 'store',
+          name: 'StorePage',
+          component: StorePage
+        }
+      ]
     }
-  ]
+  ],
 })
