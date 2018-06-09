@@ -37,6 +37,8 @@ import FormsPage from '../pages/forms-page/FormsPage.vue'
 import ComponentPage from '../pages/component-page/ComponentPage.vue'
 import StorePage from '../pages/component-page/views/StorePage.vue'
 
+import GalleryPage from '../pages/gallery-page/GalleryPage.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -208,6 +210,11 @@ export default new Router({
           component: StorePage
         }
       ]
+    },
+    {
+      path: '/gallery',
+      name: 'GalleryPage',
+      component: GalleryPage
     }
   ],
 })

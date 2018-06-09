@@ -108,7 +108,9 @@
               </router-link>
             </a-menu-item>
             <a-menu-item key="gallery">
-              <a-icon type="picture" />Gallery
+              <router-link to="/gallery" tag="span">
+                <a-icon type="picture" />Gallery
+              </router-link>
             </a-menu-item>
             <a-menu-item key="documentations">
               <router-link to="/documentations" tag="div">
