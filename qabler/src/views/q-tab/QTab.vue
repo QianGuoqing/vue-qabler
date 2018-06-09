@@ -84,7 +84,11 @@
                     503 Error
                   </router-link>
                 </a-menu-item>
-                <a-menu-item key="email">Email</a-menu-item>
+                <a-menu-item key="email">
+                  <router-link to="/pages/page-email">
+                    Email
+                  </router-link>
+                </a-menu-item>
                 <a-menu-item key="empty-page">
                   <router-link to="/pages/page-empty">
                     Empty Page

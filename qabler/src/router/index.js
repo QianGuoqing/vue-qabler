@@ -25,6 +25,7 @@ import PageError503 from '../pages/pages-page/views/page-error503/PageError503.v
 import PageProfile from '../pages/pages-page/views/page-profile/PageProfile.vue'
 import PageEmpty from '../pages/pages-page/views/page-empty/PageEmpty.vue'
 import PageRtl from '../pages/pages-page/views/page-rtl/PageRtl.vue'
+import PageEmail from '../pages/pages-page/views/page-email/PageEmail.vue'
 
 import InterfacePage from '../pages/interface-page/InterfacePage.vue'
 import ChartsPage from '../pages/interface-page/views/charts-page/ChartsPage.vue'
@@ -158,6 +159,11 @@ export default new Router({
           path: 'page-rtl',
           name: 'PageRtl',
           component: PageRtl
+        },
+        {
+          path: 'page-email',
+          name: 'PageEmail',
+          component: PageEmail
         }
       ]
     },
