@@ -36,6 +36,7 @@ import FormsPage from '../pages/forms-page/FormsPage.vue'
 
 import ComponentPage from '../pages/component-page/ComponentPage.vue'
 import StorePage from '../pages/component-page/views/StorePage.vue'
+import BlogPage from '../pages/component-page/views/BlogPage.vue'
 
 import GalleryPage from '../pages/gallery-page/GalleryPage.vue'
 
@@ -208,6 +209,11 @@ export default new Router({
           path: 'store',
           name: 'StorePage',
           component: StorePage
+        },
+        {
+          path: 'blog',
+          name: 'BlogPage',
+          component: BlogPage
         }
       ]
     },
