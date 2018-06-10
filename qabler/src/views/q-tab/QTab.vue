@@ -6,7 +6,9 @@
         <div class="tab">
           <a-menu mode="horizontal" v-model="current">
             <a-menu-item key="home">
-              <a-icon type="home" />Home
+              <router-link to="/" tag="span">
+                <a-icon type="home" />Home
+              </router-link>
             </a-menu-item>
             <a-sub-menu>
               <router-link to="/interface" tag="span" slot="title"><a-icon type="codepen" />Interface</router-link>

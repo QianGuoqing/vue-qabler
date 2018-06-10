@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import HomePage from '../pages/home-page/HomePage.vue'
 
 import DocumentationsPage from '../pages/documentations-page/DocumentationsPage.vue'
 import DocColors from '../pages/documentations-page/components/doc-colors/DocColors.vue'
@@ -47,8 +47,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'HomePage',
+      component: HomePage
     },
     {
       path: '/documentations',
