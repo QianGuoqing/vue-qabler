@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@antv/data-set": "^0.8.9",
+    "element-ui": "^2.4.1",
     "jquery": "^3.3.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",

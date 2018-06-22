@@ -39,7 +39,9 @@
                 <a-menu-item key="blog">
                   <router-link tag="span" to="/component-page/blog">Blog</router-link>
                 </a-menu-item>
-                <a-menu-item key="carousel">Carousel</a-menu-item>
+                <a-menu-item key="carousel">
+                  <router-link tag="span" to="/component-page/carousel">Carousel</router-link>
+                </a-menu-item>
               </a-menu-item-group>
             </a-sub-menu>
             <a-sub-menu>
