@@ -2,7 +2,7 @@
 
 参考[Tabler](https://tabler.github.io/tabler/index.html)的项目，使用Vue技术栈来实现。
 
-## 效果图
+## 效果图 (效果图是动态图，如果图片静止请点击图片查看)
 
 - Home
 
