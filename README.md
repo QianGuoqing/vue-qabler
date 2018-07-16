@@ -2,6 +2,72 @@
 
 参考[Tabler](https://tabler.github.io/tabler/index.html)的项目，使用Vue技术栈来实现。
 
+## 效果图
+
+- Home
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/home.gif)
+
+- Interface/Cards Design
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/cards-design.gif)
+
+- Interface/Charts
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/charts.gif)
+
+- Interface/Price Cards
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/price-cards.gif)
+
+- Components/Store
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/store.gif)
+
+- Components/Blog
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/blog.gif)
+
+- Components/Carousel
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/carousel.gif)
+
+- Pages/Profile
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/profile.gif)
+
+- Pages/Login Register ForgetPassword
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/login-register-forgetpassword.gif)
+
+- Pages/400 401 403 404 Error
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/4xx-error.gif)
+
+- Pages/500 503 Error
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/5xx-error.gif)
+
+- Pages/Email EmptyPage
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/email-emptypage.gif)
+
+- Pages/RLT
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/rlt.gif)
+
+- Forms
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/forms.gif)
+
+- Gallery
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/gallery.gif)
+
+- Documentations(具体可以参照下面各个组件的效果图)
+
+![](http://47.98.159.8/picture-repo/vue-qabler/images-repo/documentations.gif)
+
 #### 封装的组件 (点击组件类型跳转到组件详情) 
 
 **[Alert](#alert)**
